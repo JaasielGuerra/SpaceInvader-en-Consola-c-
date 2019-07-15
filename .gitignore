@@ -1,0 +1,9 @@
+#Librerias precompiladas
+*.o
+
+#Arvhivos de Dev c++
+*.win
+*.layout
+
+#Ejecutables
+*.exe
