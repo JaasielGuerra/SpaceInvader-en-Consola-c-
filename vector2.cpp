@@ -14,8 +14,8 @@ vector2::vector2(float _x, float _y)
 	this-> y = _y;
 }
 
-void vector2::normalizar(void)
-{
+void vector2::normalizar(void)//normalizar el vector asegunrandose
+{							  //que la longitud sea siempre 1 (vector unitario)
 	magnitud = sqrt( x*x + y*y );
 	if (magnitud > 0)
 	{

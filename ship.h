@@ -12,19 +12,18 @@ using namespace std;
 
 class Ship{
 	
-private:
+protected:
 	vector2 				dir;
 	float 					x, y,speed;
 	list<Bullet*> 			bal;
 	list<Bullet*>::iterator it;
-	bool 					_shot;
 	
 public:
 	Ship(float,float,float);
-	void mov();		//movimiento 
+	void mov(float);		//movimiento 
 	void draw();	//pintar 
 	void erase();
-	void shot();	
+	void shot(float);	
 };
 
 

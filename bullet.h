@@ -4,6 +4,7 @@
 #include "screen.h"
 #include <iostream>
 
+
 using namespace std;
 
 class Bullet{
@@ -12,8 +13,8 @@ private:
 	float x, y, speed;
 
 public:
-	Bullet(float,float,float);
-	bool draw();
+	Bullet(float , float , float , float);
+	bool draw(float);
 	void erase();
 	int getX(){return x;}
 	int getY(){return y;}
