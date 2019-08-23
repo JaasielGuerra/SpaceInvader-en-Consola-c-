@@ -1,6 +1,9 @@
 //implementacion de la bala
 #include "bullet.h"
 
+
+
+
 Bullet::Bullet(float _x, float _y, float _speed, float _dir)
 {
 	this->x = _x;
@@ -23,7 +26,7 @@ bool Bullet::draw(float delta)
 	color(15);
 	gotoxy(x,y); cout<<(char)203;
 	
-	return( this->y <= 2);
+	return( this->y < 2);
 }
 
 void Bullet::erase()

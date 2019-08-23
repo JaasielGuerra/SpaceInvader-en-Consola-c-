@@ -8,22 +8,23 @@
 #include <list>
 #include "bullet.h"
 
-using namespace std;
+
 
 class Ship{
 	
 protected:
+
 	vector2 				dir;
 	float 					x, y,speed;
-	list<Bullet*> 			bal;
-	list<Bullet*>::iterator it;
+	list<Bullet*> 			bal;//lista para objeto bala
+	list<Bullet*>::iterator it;//iterador para objeto bala
 	
 public:
-	Ship(float,float,float);
-	void mov(float);		//movimiento 
+	Ship(float,float,float);//constructor
+	void mov(float);		//movimiento recibe delta por referencia
 	void draw();	//pintar 
 	void erase();
-	void shot(float);	
+	void shot(float);//para disparar, recibe delta por referencia
 };
 
 

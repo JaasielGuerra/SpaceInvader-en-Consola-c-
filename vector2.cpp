@@ -2,13 +2,13 @@
 #include "vector2.h"
 #include <math.h>
 
-vector2::vector2(void)
+vector2::vector2(void)//constructor uno
 {
 	this-> x = 0;
 	this-> y = 0;
 }
 
-vector2::vector2(float _x, float _y)
+vector2::vector2(float _x, float _y)//constructor dos, recibe valores x,y
 {
 	this-> x = _x;
 	this-> y = _y;

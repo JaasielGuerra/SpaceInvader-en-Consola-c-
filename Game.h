@@ -14,15 +14,16 @@ class Game
 		~Game();//destructor
 		bool init(void);
 		void run(void);
-		void update(float&);
+		void update(float);
 		
-	protected:
+	protected://protegidos
 		float TimeBegin, TimeLast, delta;
-		Ship *nav;
-		Enemy *enem[5][11];//matriz de enemigos
+		Ship *nav;//nave jugador
 		enum{//para colocar a los enemigos
 			ROW = 5 ,COLUMN = 11
-		};		
+		};	
+		Enemy *enem[ROW][COLUMN];//matriz de enemigos
+			
 };
 
 #endif

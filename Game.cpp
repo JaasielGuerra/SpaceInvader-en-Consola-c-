@@ -18,9 +18,9 @@ bool Game::init(void)//iniciar todos los componentes del juego
 	
 	this->nav = new Ship(25 , 31 , 60.0f);
 
-	for (int i = 0; i < ROW; i++)//inicializar a los enemigos
- 		for (int j = 0; j < COLUMN ; j++)
- 			enem[i][j] = new Enemy(5 + (3 * j), 2 + (2 * i), 0);
+	for (int i = 0; i < ROW; i++)//instanciar a los enemigos
+	 	for (int j = 0; j < COLUMN ; j++)
+	 		enem[i][j] = new Enemy(5 + (3 * j), 2 + (2 * i), 0);
 }
 
 void Game::run()//correr juego
@@ -40,7 +40,7 @@ void Game::run()//correr juego
 	
 }
 
-void Game::update(float &delta)// se encarga de actualizar el juego
+void Game::update(float delta)// se encarga de actualizar el juego
 {
 	this->nav->mov(delta);
 	this->nav->shot(delta);
